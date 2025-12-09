@@ -1,0 +1,128 @@
+/* Main stylesheet for SavouFest
+   Variables, reset, and basic BEM components. */
+
+:root {
+    --color-forest-700: #0b6b3a;
+    --color-forest-500: #14a05b;
+    --color-sky-500: #2b9edb;
+    --color-light: #ffffff;
+    --color-dark: #0f1720;
+    --radius-sm: 6px;
+    --gap: 1rem;
+    --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Basic reset */
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    color: var(--color-dark);
+    background: var(--color-light);
+    line-height: 1.4;
+}
+
+/* Utilities */
+.btn {
+    display: inline-block;
+    padding: .6rem 1rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none
+}
+
+.btn--primary {
+    background: var(--color-forest-500);
+    color: var(--color-light)
+}
+
+.btn--secondary {
+    background: transparent;
+    border: 1px solid var(--color-forest-500);
+    color: var(--color-forest-500)
+}
+
+/* Header */
+.header {
+    padding: .75rem 1rem;
+    border-bottom: 1px solid #eee
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.header__logo {
+    font-weight: 700;
+    color: var(--color-forest-700);
+    text-decoration: none
+}
+
+.header__burger {
+    background: none;
+    border: none;
+    font-size: 1.25rem
+}
+
+/* Hero */
+.hero {
+    padding: 2rem 1rem;
+    text-align: center
+}
+
+.hero__title {
+    font-size: 1.25rem;
+    margin: 0 0 .5rem
+}
+
+.hero__meta {
+    margin: 0 0 1rem;
+    color: #555
+}
+
+/* Sections */
+.section {
+    padding: 1.25rem
+}
+
+.section__title {
+    font-size: 1.125rem;
+    margin: 0 0 .75rem
+}
+
+/* Cards */
+.card {
+    border: 1px solid #eee;
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    background: #fff
+}
+
+/* Footer */
+.footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: .9rem;
+    color: #666
+}
+
+/* Accessibility helper */
+.no-scroll {
+    overflow: hidden
+}
+
+/* Responsive (mobile-first) */
+@media(min-width:768px) {
+    .hero__title {
+        font-size: 2rem
+    }
+}

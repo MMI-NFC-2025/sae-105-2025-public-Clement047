@@ -1,0 +1,1 @@
+Place your image assets here. Optimize for mobile: use widths like 480px and 800px for responsive images, and prefer WebP when possible. Filenames should be lowercase, kebab-case (e.g., "laylow-hero.jpg").
