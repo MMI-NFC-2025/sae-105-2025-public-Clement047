@@ -1,45 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SavouFest — Accueil</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavouFest - Festival 12-13 Juin - Montbéliard</title>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body>
+
+    <!-- Header fixe -->
     <header class="header">
-        <div class="header__inner">
-            <a href="index.html" class="header__logo">SavouFest</a>
-            <button class="header__burger" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">☰</button>
-            <nav id="main-nav" class="nav" hidden>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html">Accueil</a></li>
-                    <li class="nav__item"><a href="festival.html">Le festival</a></li>
-                    <li class="nav__item"><a href="programme.html">Programme</a></li>
-                    <li class="nav__item"><a href="artistes.html">Artistes</a></li>
-                    <li class="nav__item"><a href="scenes.html">Scènes</a></li>
-                    <li class="nav__item"><a href="infos.html">Infos pratiques</a></li>
-                    <li class="nav__item"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a href="/" class="header__logo">
+            <img src="/assets/icons/savoufestlogo.svg" alt="Logo SavouFest">
+        </a>
     </header>
+
     <main>
+
+        <!-- Section Hero -->
         <section class="hero">
-            <h1 class="hero__title">La fête pour tous, même pour l'environnement</h1>
-            <p class="hero__meta">12 &amp; 13 juin — Parc du Près-la-Rose – Montbéliard</p>
-            <a class="btn btn--primary" href="#" role="button">Billetterie (fictive)</a>
+            <img src="/assets/icons/savoufesttypovibrante.svg" alt="SavouFest" class="hero__title">
+
+            <div class="hero__info">
+                <p class="hero__dates">12-13 JUIN</p>
+                <img src="/assets/icons/ellipse1.svg" alt="" class="hero__separator">
+                <p class="hero__location">Montbéliard</p>
+            </div>
+
+            <!-- Bouton billetterie -->
+            <a href="#billetterie" class="hero__btn">
+                <img src="/assets/icons/component2.svg" alt="Billetterie">
+            </a>
         </section>
-        <!-- TODO: Aperçu Programme, Artistes, Infos, Partenaires -->
+
+        <!-- Section Invités -->
+        <section class="invites">
+            <div class="invites__container">
+                <h2 class="invites__title">INVITES</h2>
+                <div class="invites__content">
+                    <ul class="invites__list">
+                        <li class="invites__name">Laylow</li>
+                        <li class="invites__name">Ateyaba</li>
+                        <li class="invites__name">Disiz</li>
+                        <li class="invites__name">Theodora</li>
+                        <li class="invites__name">Adèle castillon</li>
+                        <li class="invites__name">Kavinsky</li>
+                        <li class="invites__name">Kavinsky</li>
+                        <li class="invites__name">Justice</li>
+                    </ul>
+                    <img src="/assets/img/laylow1.avif" alt="Laylow" class="invites__photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Programme -->
+        <section class="programme">
+            <div class="programme__container">
+                <h2 class="programme__title">PROGRAMME</h2>
+                <div class="programme__content">
+                    <div class="programme__day">
+                        <h3>Vendredi</h3>
+                        <p>Laylow - Rap / Electro<br>Ateyaba - Rap / Electro<br>Kavinsky - Electro synthwave</p>
+                    </div>
+                    <div class="programme__day">
+                        <h3>Samedi</h3>
+                        <p>Theodora - Pop / Urban<br>Disiz - Pop / Rap<br>Justice - Electro French touch</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Infos Pratiques -->
+        <section class="infos">
+            <div class="infos__container">
+                <h2 class="infos__title">INFOS PRATIQUES</h2>
+                <img src="/assets/img/Arbre.avif" alt="Arbre" class="infos__image">
+                <ul class="infos__list">
+                    <li>Tarifs • Pass 1 jour & 2 jours</li>
+                    <li>Hébergements • Campings & hôtels</li>
+                    <li>Transports • Gare, Parking, Covoiturage</li>
+                    <li>FAQ • Voir toutes les infos pratiques</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Partenaires -->
+        <section class="partenaires">
+            <h2 class="partenaires__title">NOS PARTENAIRES</h2>
+            <div class="partenaires__grid">
+                <div class="partenaires__item">
+                    <img src="/assets/img/MMI.avif" alt="MMI">
+                </div>
+                <div class="partenaires__item">
+                    <img src="/assets/img/Ville.avif" alt="Ville de Montbéliard">
+                </div>
+                <div class="partenaires__item">
+                    <img src="/assets/img/Citeo.avif" alt="Citeo">
+                </div>
+                <div class="partenaires__item">
+                    <img src="/assets/img/amap.avif" alt="AMAP">
+                </div>
+                <div class="partenaires__item">
+                    <img src="/assets/img/Masterchicken.avif" alt="Masterchicken">
+                </div>
+                <div class="partenaires__item">
+                    <img src="/assets/img/Otacos.avif" alt="O'Tacos">
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer class="footer">
-        <p>&copy; SavouFest — 2025</p>
-    </footer>
-    <script src="src/js/menu.js" defer></script>
-    <script src="src/js/carousel.js" defer></script>
-    <script src="src/js/interaction-extra.js" defer></script>
+
 </body>
 
 </html>
