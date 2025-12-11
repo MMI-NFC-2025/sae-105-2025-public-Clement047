@@ -12,10 +12,28 @@
 
     <!-- Header fixe -->
     <header class="header">
-        <a href="/" class="header__logo">
+        <a href="#" class="header__logo" id="menuToggle">
             <img src="/assets/icons/savoufestlogo.svg" alt="Logo SavouFest">
         </a>
     </header>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+        <button class="menu-overlay__close" id="menuClose">
+            <img src="/assets/icons/component5.svg" alt="Fermer">
+        </button>
+        <div class="menu-overlay__content">
+            <img src="/assets/img/boule.gif" alt="Animation" class="menu-overlay__gif">
+            <nav class="menu-overlay__nav">
+                <a href="#invites" class="menu-overlay__link">Invités</a>
+                <a href="programme.html" class="menu-overlay__link">Programme</a>
+                <a href="#infos" class="menu-overlay__link">Infos pratiques</a>
+                <a href="#festival" class="menu-overlay__link">Le Festival</a>
+                <a href="#scenes" class="menu-overlay__link">Scènes</a>
+                <a href="#contact" class="menu-overlay__link">Contact</a>
+            </nav>
+        </div>
+    </div>
 
     <main>
 
@@ -76,20 +94,19 @@
         <section class="infos">
             <div class="infos__container">
                 <h2 class="infos__title">INFOS PRATIQUES</h2>
+                <p class="infos__text">Accès : Train, Bus, Parking</p>
+                <p class="infos__text">Tarifs : Pass 1 jour & 2 jours</p>
+                <p class="infos__text">Hébergements : Campings, Hôtels</p>
+                <p class="infos__text">→ Voir toutes les infos</p>
                 <img src="/assets/img/Arbre.avif" alt="Arbre" class="infos__image">
-                <ul class="infos__list">
-                    <li>Tarifs • Pass 1 jour & 2 jours</li>
-                    <li>Hébergements • Campings & hôtels</li>
-                    <li>Transports • Gare, Parking, Covoiturage</li>
-                    <li>FAQ • Voir toutes les infos pratiques</li>
-                </ul>
             </div>
         </section>
 
         <!-- Section Partenaires -->
         <section class="partenaires">
-            <h2 class="partenaires__title">NOS PARTENAIRES</h2>
-            <div class="partenaires__grid">
+            <div class="partenaires__wrapper">
+                <h2 class="partenaires__title">NOS PARTENAIRES</h2>
+                <div class="partenaires__grid">
                 <div class="partenaires__item">
                     <img src="/assets/img/MMI.avif" alt="MMI">
                 </div>
@@ -109,10 +126,12 @@
                     <img src="/assets/img/Otacos.avif" alt="O'Tacos">
                 </div>
             </div>
+            </div>
         </section>
 
     </main>
 
+    <script src="/src/js/menu.js"></script>
 </body>
 
 </html>
