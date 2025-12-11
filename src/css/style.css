@@ -1,6 +1,8 @@
 /* Import OBLIGATOIRE en PREMIER */
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&display=swap');
 
 /* Reset de base */
 * {
@@ -460,24 +462,26 @@ body {
     margin: 0 auto;
 }
 
+.filter__container {
+    width: 390px;
+    height: 396px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    padding: 20px;
+    margin: 0 auto 30px auto;
+}
+
 .filter__title {
-    font-family: 'Aldrich', sans-serif;
-    font-size: 24px;
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 20px;
     color: #ffffff;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     font-weight: normal;
 }
 
-.filter__container {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #ffffff;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
 .filter__group {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .filter__group:last-child {
@@ -485,10 +489,10 @@ body {
 }
 
 .filter__label {
-    font-family: 'Aldrich', sans-serif;
+    font-family: 'Bruno Ace', sans-serif;
     font-size: 16px;
     color: #ffffff;
-    margin: 0 0 12px 0;
+    margin: 0 0 10px 0;
     font-weight: normal;
 }
 
@@ -505,15 +509,20 @@ body {
 }
 
 .filter__btn {
-    font-family: 'Aldrich', sans-serif;
+    font-family: 'Glegoo', serif;
     font-size: 14px;
     color: #ffffff;
-    background-color: transparent;
+    background-color: #0A382E;
     border: 2px solid #ffffff;
-    border-radius: 20px;
-    padding: 8px 16px;
+    border-radius: 13px;
+    width: 75px;
+    height: 37px;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
 }
 
 .filter__btn:hover,
@@ -522,21 +531,277 @@ body {
     color: #0A382E;
 }
 
+/* Boutons de scène avec largeurs spécifiques */
+.filter__btn--scene1 {
+    width: 75px;
+}
+
+.filter__btn--scene2 {
+    width: 120px;
+}
+
+.filter__btn--scene3 {
+    width: 118px;
+}
+
 .filter__download {
     display: block;
     width: fit-content;
     margin: 0 auto;
-    font-family: 'Aldrich', sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-    text-decoration: none;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    padding: 12px 30px;
+    margin-left: calc(50% + 10px);
+    transform: translateX(-50%);
     transition: all 0.3s ease;
 }
 
+.filter__download img {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
 .filter__download:hover {
-    background-color: #ffffff;
-    color: #0A382E;
+    transform: translateX(-50%) scale(1.05);
+}
+
+/* ========================================
+   PAGE INFOS PRATIQUES
+   ======================================== */
+.infos-page {
+    min-height: 100vh;
+    background-color: #0A382E;
+    padding: 80px 20px 40px 20px;
+}
+
+.infos-page__title {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Cartes d'infos */
+.info-card {
+    max-width: 430px;
+    margin: 0 auto 30px auto;
+}
+
+.info-card__container {
+    width: 390px;
+    min-height: 220px;
+    background-color: #105142;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.info-card__title {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+}
+
+.info-card__text {
+    font-family: 'Glegoo', serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.info-card__list {
+    font-family: 'Glegoo', serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    padding-left: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+.info-card__list li {
+    margin-bottom: 8px;
+}
+
+.info-card__btn {
+    display: block;
+    width: fit-content;
+    margin: 20px 0 0 0;
+    transition: transform 0.3s ease;
+}
+
+.info-card__btn img {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.info-card__btn:hover {
+    transform: scale(1.05);
+}
+
+/* Rectangle Hébergements avec dimensions spécifiques */
+.info-card__container--hebergements {
+    min-height: 357px;
+}
+
+/* Rectangle FAQ avec dimensions spécifiques */
+.info-card__container--faq {
+    min-height: 562px;
+}
+
+/* Questions FAQ avec espacement augmenté */
+.info-card__question {
+    font-family: 'Glegoo', serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 0 25px 0;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.info-card__question-title {
+    font-weight: bold;
+}
+
+/* ========================================
+   PAGE LE FESTIVAL
+   ======================================== */
+.festival-page {
+    min-height: 100vh;
+    background-color: #0A382E;
+    background-image: url('/assets/img/Savoufestfond.avif');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 80px 20px 40px 20px;
+}
+
+.festival-page__title {
+    font-family: 'Bahiana', sans-serif;
+    font-size: 96px;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Cartes Festival */
+.festival-card {
+    max-width: 430px;
+    margin: 30px auto;
+}
+
+/* Premier rectangle avec marge supérieure plus grande */
+.festival-card:first-of-type {
+    margin-top: 80px;
+}
+
+.festival-card__container {
+    width: 390px;
+    min-height: 331px;
+    background-color: #105142;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.festival-card__title {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+}
+
+.festival-card__text {
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 2;
+}
+
+.festival-card__image {
+    position: absolute;
+    bottom: 10px;
+    right: -2px;
+    width: 180px;
+    top: 84px;
+    height: auto;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* Rectangle EQUIPE avec hauteur spécifique */
+.festival-card__container--equipe {
+    min-height: 1618px;
+}
+
+/* Rectangle CHARTE avec hauteur spécifique */
+.festival-card__container--charte {
+    min-height: 207px;
+}
+
+/* Texte en Glegoo pour la section équipe */
+.festival-card__text--glegoo {
+    font-family: 'Glegoo', serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Sous-titres des sections */
+.festival-card__subtitle {
+    font-family: 'Glegoo', serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 25px 0 15px 0;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+/* Images décoratives sous le texte */
+.festival-card__decoration {
+    position: absolute;
+    z-index: 1;
+}
+
+.festival-card__decoration--logo {
+    width: 450px;
+    height: auto;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.festival-card__decoration--team {
+    width: 390px;
+    height: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+;
+opacity: 1;
 }
