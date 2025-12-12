@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SavouFest</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header fixe -->
+    <header class="header">
+        <a href="/" class="header__logo">
+            <img src="/assets/icons/savoufestlogo.svg" alt="Logo SavouFest">
+        </a>
+    </header>
+
+    <main class="contact-page">
+
+        <h1 class="contact-page__title">CONTACT</h1>
+
+        <!-- Rectangle du formulaire -->
+        <div class="contact-form-container">
+            <h2 class="contact-form__title">Formulaire de contact</h2>
+
+            <form class="contact-form" action="#" method="POST">
+                
+                <div class="contact-form__field">
+                    <label for="nom" class="contact-form__label">NOM</label>
+                    <input type="text" id="nom" name="nom" class="contact-form__input" required>
+                </div>
+
+                <div class="contact-form__field">
+                    <label for="mail" class="contact-form__label">MAIL</label>
+                    <input type="email" id="mail" name="mail" class="contact-form__input" required>
+                </div>
+
+                <div class="contact-form__field">
+                    <label for="sujet" class="contact-form__label">SUJET</label>
+                    <input type="text" id="sujet" name="sujet" class="contact-form__input" required>
+                </div>
+
+                <div class="contact-form__field contact-form__field--message">
+                    <label for="message" class="contact-form__label">MESSAGE</label>
+                    <textarea id="message" name="message" class="contact-form__textarea" required></textarea>
+                </div>
+
+                <button type="submit" class="contact-form__button">
+                    <img src="/assets/icons/icons%20page%20contact/envoyer.svg" alt="Envoyer" class="contact-form__button-img">
+                </button>
+
+            </form>
+        </div>
+
+        <!-- Rectangle Coordonnées -->
+        <div class="contact-info-container">
+            <h2 class="contact-info__title">Coordonnées</h2>
+            <div class="contact-info__item">
+                <img src="/assets/icons/icons%20page%20contact/mail.svg" alt="Email" class="contact-info__icon">
+                <p class="contact-info__text">savoufestmblrd@gmail.com</p>
+            </div>
+            <div class="contact-info__item">
+                <img src="/assets/icons/icons%20page%20contact/tel.svg" alt="Téléphone" class="contact-info__icon">
+                <p class="contact-info__text">0769049854</p>
+            </div>
+            <div class="contact-info__item">
+                <img src="/assets/icons/icons%20page%20contact/loc.svg" alt="Localisation" class="contact-info__icon">
+                <p class="contact-info__text">1 rue de l'Épinette Vieux Charmonts</p>
+            </div>
+        </div>
+
+        <!-- Rectangle Réseaux sociaux -->
+        <div class="contact-social-container">
+            <h2 class="contact-social__title">Réseaux sociaux</h2>
+            <div class="contact-social__item">
+                <img src="/assets/icons/icons%20page%20contact/insta.svg" alt="Instagram" class="contact-social__icon">
+                <p class="contact-social__text">savou_fest</p>
+            </div>
+            <div class="contact-social__item">
+                <img src="/assets/icons/icons%20page%20contact/facebook.svg" alt="Facebook" class="contact-social__icon">
+                <p class="contact-social__text">savou_fest</p>
+            </div>
+            <div class="contact-social__item">
+                <img src="/assets/icons/icons%20page%20contact/tiktok.svg" alt="TikTok" class="contact-social__icon">
+                <p class="contact-social__text">savou_festmblrd</p>
+            </div>
+            <div class="contact-social__item">
+                <img src="/assets/icons/icons%20page%20contact/youtube.svg" alt="YouTube" class="contact-social__icon">
+                <p class="contact-social__text">Savou Fest TV</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

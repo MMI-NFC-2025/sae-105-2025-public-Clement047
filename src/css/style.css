@@ -1115,4 +1115,225 @@ body {
 .artist-detail__gallery--ateyaba {
     background-color: #256993;
 }
+
+/* ========================================
+   PAGE CONTACT
+   ======================================== */
+.contact-page {
+    min-height: 100vh;
+    background-color: #0A382E;
+    padding: 80px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page__title {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin: 40px 0 30px 0;
+    font-weight: normal;
+    width: 390px;
+    text-align: left;
+}
+
+/* Rectangle du formulaire */
+.contact-form-container {
+    width: 390px;
+    min-height: 571px;
+    background-color: #105142;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.contact-form__title {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    font-weight: normal;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-form__field--message {
+    margin-top: 10px;
+}
+
+.contact-form__label {
+    font-family: 'Glegoo', serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.contact-form__input {
+    width: 100%;
+    max-width: 198px;
+    height: 37px;
+    background-color: #0A382E;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    padding: 0 15px;
+    font-family: 'Glegoo', serif;
+    font-size: 14px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.contact-form__input:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+.contact-form__textarea {
+    width: 100%;
+    max-width: 340px;
+    height: 155px;
+    background-color: #0A382E;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    padding: 15px;
+    font-family: 'Glegoo', serif;
+    font-size: 14px;
+    color: #ffffff;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.contact-form__textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+.contact-form__button {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 0;
+    margin-top: 10px;
+    align-self: flex-start;
+    display: block;
+}
+
+.contact-form__button img {
+    width: auto;
+    height: 40px;
+    display: block;
+}
+
+.contact-form__button:hover {
+    transform: scale(1.05);
+}
+
+/* Rectangle Coordonnées */
+.contact-info-container {
+    width: 390px;
+    min-height: 234px;
+    background-color: #105142;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.contact-info__title {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 25px 0;
+    font-weight: normal;
+}
+
+.contact-info__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.contact-info__item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info__icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.contact-info__text {
+    font-family: 'Glegoo', serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Rectangle Réseaux sociaux */
+.contact-social-container {
+    width: 390px;
+    min-height: 259px;
+    background-color: #105142;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.contact-social__title {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 25px 0;
+    font-weight: normal;
+}
+
+.contact-social__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.contact-social__item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-social__icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.contact-social__text {
+    font-family: 'Glegoo', serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+
 }
