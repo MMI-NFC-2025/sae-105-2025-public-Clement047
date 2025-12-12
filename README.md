@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : BERTRAND
+- PRÉNOM : Clément
+- GROUPE : A2
+- URL du site : https://peaceful-dusk-b05529.netlify.app/scenes
+- URL FIGMA : https://www.figma.com/design/ZAQkhIaap1HalgDEGvV3Pz/Untitled?node-id=0-1&t=MQb2Pblxnr40nHo6-1
 
 ## Sujet
 
