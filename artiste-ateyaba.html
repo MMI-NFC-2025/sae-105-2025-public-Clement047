@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateyaba - SavouFest</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header fixe -->
+    <header class="header">
+        <a href="/" class="header__logo">
+            <img src="/assets/icons/savoufestlogo.svg" alt="Logo SavouFest">
+        </a>
+    </header>
+
+    <main class="artist-detail-page artist-detail-page--ateyaba">
+
+        <!-- Conteneur pour typo + artiste -->
+        <div class="artist-detail__top">
+            <!-- Image typo en fond -->
+            <img src="/assets/img/template page artiste/ateyabatypo.avif" alt=""
+                class="artist-detail__typo artist-detail__typo--background">
+
+            <!-- Image de l'artiste par-dessus -->
+            <img src="/assets/img/template page artiste/ateyabaartiste.avif" alt="Ateyaba" class="artist-detail__photo">
+        </div>
+
+        <!-- Deuxième typo en dessous -->
+        <img src="/assets/img/template page artiste/ateyabatypo.avif" alt=""
+            class="artist-detail__typo artist-detail__typo--bottom">
+
+        <!-- Informations -->
+        <div class="artist-detail__info">
+            <p class="artist-detail__date">Vendredi 12 juin</p>
+            <h1 class="artist-detail__scene">OXYGENE</h1>
+        </div>
+
+        <!-- Rectangle Description -->
+        <div class="artist-detail__description artist-detail__description--ateyaba">
+            <h2 class="artist-detail__description-title">DESCRIPTION</h2>
+            <p class="artist-detail__description-text">
+                Ateyaba est un rappeur français originaire de Montpelier, révélé au grand public sous le nom de Joke au milieu des années 2010. Il s'impose rapidement comme une figure majeure du rap français grâce à son écriture personnelle, son sens de la mélodie et ses influences venues du rap américain.
+            </p>
+            <p class="artist-detail__description-text">
+                Au fil de sa carrière, Ateyaba développe un style singulier mêlant rap, sonorités pop et ambiances électroniques.
+            </p>
+
+            <img src="/assets/icons/template page artiste/ellipse4.svg" alt=""
+                class="artist-detail__description-ellipse">
+
+            <p class="artist-detail__description-text">
+                Il se distingue par une grande exigence artistique, une attention particulière portée aux productions et une identité visuelle forte, inspirée par la mode et la culture contemporaine.
+            </p>
+            <p class="artist-detail__description-text">
+                Reconnu pour la qualité de ses albums et de ses performances scéniques, Ateyaba fait partie des artistes qui ont contribué à renouveler le rap français en brouillant les frontières entre les genres et en affirmant une identité artistique affirmée.
+            </p>
+        </div>
+
+        <!-- Rectangle Carrousel -->
+        <div class="artist-detail__gallery artist-detail__gallery--ateyaba">
+            <h2 class="artist-detail__gallery-title">GALERIE PHOTO</h2>
+            <div class="artist-detail__carousel">
+                <button class="carousel__btn carousel__btn--prev" id="prevBtnAteyaba">
+                    <img src="/assets/icons/template page artiste/flèchegaucheateyaba.svg" alt="Précédent">
+                </button>
+
+                <div class="carousel__images">
+                    <img src="/assets/img/template page artiste/Carroussel/ateyabacaroussel1.avif" alt="Ateyaba 1"
+                        class="carousel__image active">
+                    <img src="/assets/img/template page artiste/Carroussel/ateyabacaroussel2.avif" alt="Ateyaba 2"
+                        class="carousel__image">
+                    <img src="/assets/img/template page artiste/Carroussel/ateyabacaroussel3.avif" alt="Ateyaba 3"
+                        class="carousel__image">
+                    <img src="/assets/img/template page artiste/Carroussel/ateyabacaroussel4.avif" alt="Ateyaba 4"
+                        class="carousel__image">
+                    <img src="/assets/img/template page artiste/Carroussel/ateyabacaroussel5.avif" alt="Ateyaba 5"
+                        class="carousel__image">
+                </div>
+
+                <button class="carousel__btn carousel__btn--next" id="nextBtnAteyaba">
+                    <img src="/assets/icons/template page artiste/flèchedroiteateyaba.svg" alt="Suivant">
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="/src/js/carousel-ateyaba.js"></script>
+</body>
+
+</html>

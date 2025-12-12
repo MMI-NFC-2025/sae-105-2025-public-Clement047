@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laylow - SavouFest</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header fixe -->
+    <header class="header">
+        <a href="/" class="header__logo">
+            <img src="/assets/icons/savoufestlogo.svg" alt="Logo SavouFest">
+        </a>
+    </header>
+
+    <main class="artist-detail-page">
+
+        <!-- Conteneur pour typo + artiste -->
+        <div class="artist-detail__top">
+            <!-- Image typo en fond -->
+            <img src="/assets/img/template page artiste/laylowtypo.avif" alt=""
+                class="artist-detail__typo artist-detail__typo--background">
+
+            <!-- Image de l'artiste par-dessus -->
+            <img src="/assets/img/template page artiste/laylowartiste.avif" alt="Laylow" class="artist-detail__photo">
+        </div>
+
+        <!-- Deuxième typo en dessous -->
+        <img src="/assets/img/template page artiste/laylowtypo.avif" alt=""
+            class="artist-detail__typo artist-detail__typo--bottom">
+
+        <!-- Informations -->
+        <div class="artist-detail__info">
+            <p class="artist-detail__date">Vendredi 12 juin</p>
+            <h1 class="artist-detail__scene">OXYGENE</h1>
+        </div>
+
+        <!-- Rectangle Description -->
+        <div class="artist-detail__description">
+            <h2 class="artist-detail__description-title">DESCRIPTION</h2>
+            <p class="artist-detail__description-text">
+                Laylow, de son vrai nom Jérémy Larroux, est l'une des figures les plus novatrices de la scène rap
+                française. Reconnu pour son univers futuriste et cinématographique, il mélange sonorités rap, musique
+                électronique et ambiances digitales pour créer une identité sonore unique.
+            </p>
+            <p class="artist-detail__description-text">
+                Depuis ses débuts, il se distingue par une approche visuelle très forte : clips conceptuels,
+                storytelling numérique, avatars virtuels et albums construits comme de véritables œuvres multi-médias.
+            </p>
+
+            <img src="/assets/icons/template page artiste/ellipse4.svg" alt=""
+                class="artist-detail__description-ellipse">
+
+            <p class="artist-detail__description-text">
+                Avec des projets marquants comme Trinity ou L’Étrange Histoire de Mr. Anderson, Laylow a imposé une
+                esthétique singulière où se mêlent introspection, dystopie et expérimentations sonores.
+            </p>
+            <p class="artist-detail__description-text">
+                Sur scène, son énergie et la puissance de sa mise en scène offrent une expérience immersive, à mi-chemin
+                entre concert et film de science-fiction. Artiste avant-gardiste, perfectionniste et profondément
+                créatif, Laylow continue de repousser les frontières du rap contemporain.
+            </p>
+        </div>
+
+        <!-- Rectangle Carrousel -->
+        <div class="artist-detail__gallery">
+            <h2 class="artist-detail__gallery-title">GALERIE PHOTO</h2>
+            <div class="artist-detail__carousel">
+                <button class="carousel__btn carousel__btn--prev" id="prevBtn">
+                    <img src="/assets/icons/template page artiste/flèchedroitelaylow.svg" alt="Précédent">
+                </button>
+
+                <div class="carousel__images">
+                    <img src="/assets/img/template page artiste/Carroussel/laylowcaroussel1.avif" alt="Laylow 1"
+                        class="carousel__image active">
+                    <img src="/assets/img/template page artiste/Carroussel/laylowcaroussel2.avif" alt="Laylow 2"
+                        class="carousel__image">
+                    <img src="/assets/img/template page artiste/Carroussel/laylowcaroussel3.avif" alt="Laylow 3"
+                        class="carousel__image">
+                    <img src="/assets/img/template page artiste/Carroussel/laylowcaroussel4.avif" alt="Laylow 4"
+                        class="carousel__image">
+                    <img src="/assets/img/template page artiste/Carroussel/laylowcaroussel5.avif" alt="Laylow 5"
+                        class="carousel__image">
+                </div>
+
+                <button class="carousel__btn carousel__btn--next" id="nextBtn">
+                    <img src="/assets/icons/template page artiste/flèchegauchelaylow.svg" alt="Suivant">
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="/src/js/carousel.js"></script>
+</body>
+
+</html>

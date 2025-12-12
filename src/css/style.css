@@ -816,14 +816,18 @@ body {
 .artistes-page__vertical-image {
     position: absolute;
     left: 32px;
-    top: 52%;
-    transform: translateY(-50%);
+    top: 30% transform: translateY(-50%);
     height: 780px;
     width: auto;
     z-index: 0;
 }
 
 /* Cartes artistes */
+.artist-card-link {
+    text-decoration: none;
+    display: block;
+}
+
 .artist-card {
     max-width: 430px;
     margin: 50px auto;
@@ -833,6 +837,12 @@ body {
     gap: 3px;
     position: relative;
     z-index: 10;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: scale(1.02);
 }
 
 .artist-card__photo {
@@ -896,4 +906,213 @@ body {
 .artist-card__photo--styleto {
     width: 257px;
     height: 244px;
+}
+
+/* ========================================
+   PAGE DETAIL ARTISTE
+   ======================================== */
+.artist-detail-page {
+    min-height: 100vh;
+    background-color: #0A382E;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Conteneur top avec typo + artiste superposés */
+.artist-detail__top {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    margin-top: 10px;
+}
+
+/* Premier typo en arrière-plan */
+.artist-detail__typo--background {
+    position: absolute;
+    top: 193px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+/* Image de l'artiste par-dessus le premier typo */
+.artist-detail__photo {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+/* Centrage spécifique pour Ateyaba */
+.artist-detail-page--ateyaba .artist-detail__photo {
+    transform: translateX(-30px);
+}
+
+/* Deuxième typo en dessous */
+.artist-detail__typo--bottom {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    display: block;
+    margin-top: 0;
+}
+
+/* Informations en bas */
+.artist-detail__info {
+    text-align: center;
+    width: 100%;
+    margin-top: -20px;
+    padding-bottom: 40px;
+}
+
+.artist-detail__date {
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1;
+}
+
+.artist-detail__scene {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+/* Rectangle Description */
+.artist-detail__description {
+    width: 385px;
+    min-height: 732px;
+    background-color: #105142;
+    background-image: url('/assets/img/template page artiste/fondrectanglematrix.avif');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    padding: 20px;
+    margin: 30px auto 40px auto;
+    position: relative;
+}
+
+.artist-detail__description-title {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+
+.artist-detail__description-text {
+    font-family: 'Glegoo', serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.artist-detail__description-ellipse {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Rectangle Carrousel */
+.artist-detail__gallery {
+    width: 390px;
+    min-height: 315px;
+    background-color: #105142;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    padding: 20px;
+    margin: 0px auto 40px auto;
+}
+
+.artist-detail__gallery-title {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+
+.artist-detail__carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.carousel__images {
+    position: relative;
+    width: 200px;
+    height: 220px;
+    flex-shrink: 0;
+}
+
+.carousel__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel__image.active {
+    opacity: 1;
+}
+
+.carousel__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.carousel__btn:hover {
+    transform: scale(1.1);
+}
+
+.carousel__btn img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================================
+   PAGE DETAIL ARTISTE - ATEYABA
+   ======================================== */
+.artist-detail-page--ateyaba {
+    background-color: #224295;
+}
+
+.artist-detail__description--ateyaba {
+    background-image: url('/assets/img/template page artiste/fondrectangleultraviolet.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.artist-detail__gallery--ateyaba {
+    background-color: #256993;
+}
 }
