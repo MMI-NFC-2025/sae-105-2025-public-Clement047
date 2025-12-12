@@ -1,4 +1,9 @@
-// Gestion du menu overlay
+/**
+ * Gestion du menu overlay
+ * URL où l'interaction est visible : /index.html (et toutes les pages avec le menu)
+ * Permet d'ouvrir/fermer le menu de navigation en overlay
+ */
+
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menuToggle');
     const menuOverlay = document.getElementById('menuOverlay');

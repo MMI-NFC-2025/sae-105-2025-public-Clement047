@@ -1,4 +1,9 @@
-// Carrousel pour la galerie photo de l'artiste Ateyaba
+/**
+ * Carrousel pour la galerie photo de l'artiste Ateyaba
+ * URL où l'interaction est visible : /artiste-ateyaba.html
+ * Permet de naviguer entre les photos de l'artiste avec des boutons précédent/suivant
+ */
+
 document.addEventListener('DOMContentLoaded', function () {
     const images = document.querySelectorAll('.carousel__image');
     const prevBtn = document.getElementById('prevBtnAteyaba');

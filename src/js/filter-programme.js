@@ -1,3 +1,10 @@
+/**
+ * Système de filtrage du programme du festival
+ * URL où l'interaction est visible : /programme.html
+ * Permet de filtrer les artistes par genre, horaire et scène
+ * Affiche dynamiquement les cartes d'artistes correspondant aux filtres sélectionnés
+ */
+
 // Données des artistes
 const artists = [
     {

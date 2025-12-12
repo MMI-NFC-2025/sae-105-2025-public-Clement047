@@ -1,4 +1,9 @@
-// Recherche d'artiste sur la page
+/**
+ * Recherche d'artiste sur la page
+ * URL où l'interaction est visible : /artistes.html
+ * Permet de rechercher un artiste par son nom et de scroller automatiquement vers sa carte
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
     const searchForm = document.querySelector('.search-form');
     const searchInput = document.querySelector('.search-form__input');
