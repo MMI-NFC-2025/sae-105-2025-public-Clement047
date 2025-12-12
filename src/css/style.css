@@ -18,7 +18,7 @@ body {
 
 /* Header fixe */
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -136,6 +136,21 @@ body {
 /* ========================================
    SECTION INVITÉS
    ======================================== */
+.invites-link,
+.programme-link,
+.infos-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.invites-link:hover,
+.programme-link:hover,
+.infos-link:hover {
+    transform: scale(1.02);
+}
+
 .invites {
     padding: 20px;
     display: flex;
@@ -509,6 +524,13 @@ body {
     gap: 10px;
 }
 
+.filter__options--scenes {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: visible;
+}
+
 .filter__btn {
     font-family: 'Glegoo', serif;
     font-size: 14px;
@@ -534,15 +556,21 @@ body {
 
 /* Boutons de scène avec largeurs spécifiques */
 .filter__btn--scene1 {
-    width: 75px;
+    width: 80px;
+    flex-shrink: 0;
 }
 
 .filter__btn--scene2 {
-    width: 120px;
+    width: 130px;
+    white-space: nowrap;
+    padding: 8px 8px;
+    flex-shrink: 0;
+    font-size: 13px;
 }
 
 .filter__btn--scene3 {
-    width: 118px;
+    width: 110px;
+    flex-shrink: 0;
 }
 
 .filter__download {
@@ -1099,6 +1127,27 @@ body {
     height: 100%;
 }
 
+/* Bouton retour */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.back-button img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+}
+
 /* ========================================
    PAGE DETAIL ARTISTE - ATEYABA
    ======================================== */
@@ -1456,7 +1505,7 @@ body {
     font-family: 'Aldrich', sans-serif;
     font-size: 70px;
     color: #ffffff;
-    margin: 0 0 20px 0;
+    margin: 0 0 5px 0;
     font-weight: normal;
     text-align: center;
 }
@@ -1464,7 +1513,7 @@ body {
 .scene-detail__ellipse {
     width: 200px;
     height: auto;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 10px auto;
     display: block;
 }
 
@@ -1502,4 +1551,107 @@ body {
     mix-blend-mode: screen;
 }
 
+}
+/* ========================================
+   PAGE ERREUR 404
+   ======================================== */
+body.error-body {
+    background-color: #090F0B;
+}
+
+.error-page {
+    min-height: 100vh;
+    background-color: #090F0B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.error-page__hero {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto 30px auto;
+}
+
+.error-page__matrix {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.error-page__number {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(255, 0, 100, 0.7)) drop-shadow(0 0 40px rgba(0, 255, 255, 0.5));
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% {
+        transform: translate(-50%, -50%);
+    }
+    20% {
+        transform: translate(calc(-50% - 2px), calc(-50% + 2px));
+    }
+    40% {
+        transform: translate(calc(-50% - 2px), calc(-50% - 2px));
+    }
+    60% {
+        transform: translate(calc(-50% + 2px), calc(-50% + 2px));
+    }
+    80% {
+        transform: translate(calc(-50% + 2px), calc(-50% - 2px));
+    }
+}
+
+.error-page__title {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Aldrich', sans-serif;
+    font-size: 32px;
+    color: #15D681;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 8px;
+    -webkit-text-stroke: 1px #15D681;
+}
+
+.error-page__message {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.error-page__button {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #15D681;
+    color: #090F0B;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+}
+
+.error-page__button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(21, 214, 129, 0.6);
 }
