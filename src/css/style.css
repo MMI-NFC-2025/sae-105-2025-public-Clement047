@@ -1655,3 +1655,140 @@ body.error-body {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(21, 214, 129, 0.6);
 }
+
+/* ========================================
+   CARTES D'ARTISTES PROGRAMME
+   ======================================== */
+.artist-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.programme-card {
+    background-color: #105142;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.programme-card:hover {
+    transform: scale(1.05);
+}
+
+.programme-card__image-wrapper {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.programme-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.programme-card__name {
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.artist-cards__empty {
+    grid-column: 1 / -1;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+    background-color: #0A382E;
+    border-top: 2px solid #ffffff;
+    padding: 30px 20px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer__content {
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.footer__logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer__logo img {
+    width: 60px;
+    height: auto;
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.footer__link {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: #15D681;
+}
+
+.footer__info {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer__text {
+    font-family: 'Glegoo', serif;
+    font-size: 12px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.footer__copyright {
+    font-family: 'Glegoo', serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 15px;
+}
+
+/* Adaptation du footer selon les pages */
+/* Page artiste Laylow (vert) */
+.artist-detail-page .footer {
+    background-color: #105142;
+}
+
+/* Page artiste Ateyaba (bleu) */
+.artist-detail-page--ateyaba .footer {
+    background-color: #224295;
+}
+
+/* Page 404 (noir-vert foncé) */
+body.error-body .footer {
+    background-color: #090F0B;
+}
