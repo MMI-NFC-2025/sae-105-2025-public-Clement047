@@ -802,6 +802,98 @@ body {
     opacity: 1;
 }
 
-;
-opacity: 1;
+/* ========================================
+   PAGE ARTISTES
+   ======================================== */
+.artistes-page {
+    min-height: 100vh;
+    background-color: #105142;
+    padding: 80px 20px 40px 20px;
+    position: relative;
+}
+
+/* Image verticale ARTISTES à gauche */
+.artistes-page__vertical-image {
+    position: absolute;
+    left: 32px;
+    top: 52%;
+    transform: translateY(-50%);
+    height: 780px;
+    width: auto;
+    z-index: 0;
+}
+
+/* Cartes artistes */
+.artist-card {
+    max-width: 430px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    position: relative;
+    z-index: 10;
+}
+
+.artist-card__photo {
+    width: 250px;
+    height: 244px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.artist-card__name {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 5px 0 0 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.artist-card__ellipse {
+    width: 120px;
+    height: 2px;
+    margin: 2px auto;
+    display: block;
+}
+
+.artist-card__scene {
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.artist-card__date {
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+/* Carte Ateyaba avec dimensions spécifiques */
+.artist-card__photo--ateyaba {
+    width: 255px;
+    height: 244px;
+}
+
+/* Carte Adèle Castillon avec dimensions spécifiques */
+.artist-card__photo--adele {
+    width: 253px;
+    height: 244px;
+}
+
+/* Carte Justice avec dimensions spécifiques */
+.artist-card__photo--justice {
+    width: 250px;
+    height: 248px;
+}
+
+/* Carte Styleto avec dimensions spécifiques */
+.artist-card__photo--styleto {
+    width: 257px;
+    height: 244px;
 }
