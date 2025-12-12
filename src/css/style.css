@@ -24,12 +24,98 @@ body {
     width: 100%;
     padding: 1rem 1.5rem;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo img {
     width: 50px;
     height: auto;
     display: block;
+}
+
+/* Formulaire de recherche */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.search-form:hover,
+.search-form:focus-within {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 15px rgba(21, 214, 129, 0.3);
+}
+
+.search-form__input {
+    border: none;
+    background: transparent;
+    padding: 8px 15px;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    outline: none;
+    width: 180px;
+}
+
+.search-form__input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-form__button {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.search-form__button:hover {
+    color: #15D681;
+}
+
+.search-form__button svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Message de recherche */
+.search-message {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(21, 214, 129, 0.95);
+    color: #0A382E;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 14px;
+    z-index: 9999;
+    animation: slideDown 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
 }
 
 /* Section Hero */
@@ -1552,6 +1638,7 @@ body {
 }
 
 }
+
 /* ========================================
    PAGE ERREUR 404
    ======================================== */
@@ -1595,18 +1682,24 @@ body.error-body {
 }
 
 @keyframes glitch {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(-50%, -50%);
     }
+
     20% {
         transform: translate(calc(-50% - 2px), calc(-50% + 2px));
     }
+
     40% {
         transform: translate(calc(-50% - 2px), calc(-50% - 2px));
     }
+
     60% {
         transform: translate(calc(-50% + 2px), calc(-50% + 2px));
     }
+
     80% {
         transform: translate(calc(-50% + 2px), calc(-50% - 2px));
     }
