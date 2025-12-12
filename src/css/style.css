@@ -1335,5 +1335,84 @@ body {
     margin: 0;
 }
 
+/* ========================================
+   PAGE SCENES
+   ======================================== */
+.scenes-page {
+    min-height: 100vh;
+    background-color: #105142;
+    padding: 80px 20px 40px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Image verticale SCENES */
+.scenes-page__vertical-image {
+    position: absolute;
+    left: 23px;
+    top: 126px;
+    height: 780px;
+    width: auto;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Header avec triangle et titre */
+.scenes-page__header {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    margin: 40px 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scenes-page__triangle {
+    position: absolute;
+    width: 390px;
+    top: 25px;
+    height: auto;
+    z-index: 1;
+}
+
+.scenes-page__title {
+    font-family: 'Bahiana', cursive;
+    font-size: 96px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: normal;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+/* Cartes de scènes */
+.scene-card {
+    width: 100%;
+    max-width: 390px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.scene-card__title {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.scene-card__image {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 }
