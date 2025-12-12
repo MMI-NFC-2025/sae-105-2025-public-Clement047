@@ -11,12 +11,12 @@
 <body>
 
     <!-- Header fixe -->
-    <header class="header">
-        <a href="/" class="header__logo">
+    <header class="header" role="banner">
+        <a href="/" class="header__logo" aria-label="Retour à l'accueil">
             <img src="/assets/icons/savoufestlogo.svg" alt="Logo SavouFest">
         </a>
         <!-- Formulaire de recherche -->
-        <form class="search-form" role="search">
+        <form class="search-form" role="search" aria-label="Rechercher un artiste">
             <input type="search" class="search-form__input" placeholder="Rechercher un artiste..."
                 aria-label="Rechercher">
             <button type="submit" class="search-form__button" aria-label="Lancer la recherche">
@@ -29,7 +29,7 @@
         </form>
     </header>
 
-    <main class="artistes-page">
+    <main class="artistes-page" role="main">
 
         <!-- Image ARTISTES verticale à gauche -->
         <img src="/assets/img/Artistes/artistes.avif" alt="Artistes" class="artistes-page__vertical-image">

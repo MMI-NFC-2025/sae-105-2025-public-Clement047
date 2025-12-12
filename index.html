@@ -11,20 +11,20 @@
 <body>
 
     <!-- Header fixe -->
-    <header class="header">
-        <a href="#" class="header__logo" id="menuToggle">
+    <header class="header" role="banner">
+        <a href="#" class="header__logo" id="menuToggle" aria-label="Ouvrir le menu de navigation">
             <img src="/assets/icons/savoufestlogo.svg" alt="Logo SavouFest">
         </a>
     </header>
 
     <!-- Menu Overlay -->
-    <div class="menu-overlay" id="menuOverlay">
-        <button class="menu-overlay__close" id="menuClose">
+    <div class="menu-overlay" id="menuOverlay" role="dialog" aria-label="Menu de navigation">
+        <button class="menu-overlay__close" id="menuClose" aria-label="Fermer le menu">
             <img src="/assets/icons/component5.svg" alt="Fermer">
         </button>
         <div class="menu-overlay__content">
             <img src="/assets/img/boule.gif" alt="Animation" class="menu-overlay__gif">
-            <nav class="menu-overlay__nav">
+            <nav class="menu-overlay__nav" role="navigation" aria-label="Navigation principale">
                 <a href="artistes.html" class="menu-overlay__link">Invités</a>
                 <a href="programme.html" class="menu-overlay__link">Programme</a>
                 <a href="infos-pratiques.html" class="menu-overlay__link">Infos pratiques</a>
@@ -35,10 +35,10 @@
         </div>
     </div>
 
-    <main>
+    <main role="main">
 
         <!-- Section Hero -->
-        <section class="hero">
+        <section class="hero" aria-label="Présentation du festival">
             <img src="/assets/icons/savoufesttypovibrante.svg" alt="SavouFest" class="hero__title">
 
             <div class="hero__info">
